@@ -207,15 +207,6 @@ button {
   min-height: 462px;
 }
 
-.footer {
-  min-height: 350px;
-  background: url('../../assets/images/bg.png'),
-    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
 .btn {
   width: 207px;
   height: 52px;
@@ -552,7 +543,7 @@ button {
   color: #545454;
   width: 349px;
   height: 43px;
-  background: #F1CDB3;
+  background: #f1cdb3;
   border-radius: 9px;
   padding: 10px 15px;
   text-align: right;
@@ -560,4 +551,46 @@ button {
   background-repeat: no-repeat;
   background-position: 15px center;
   margin: 20px 0;
+}
+
+.footer {
+  min-height: 350px;
+  background: url('../../assets/images/bg.png'),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 40px;
+}
+
+.footer-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  min-height: 310px;
+  display: flex;
+  justify-content: space-between
+}
+
+.footer-blocks {
+  width: 302px;
+  min-height: 234px;
+}
+
+.footer-blocks:nth-child(2) {
+  margin-right: 25px;
+}
+
+.footer-img {
+  height: 310px;
+}
+
+.footer-title {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #FFFFFF;
+  padding-top: 16px;
 }
