@@ -241,7 +241,6 @@ button {
   background: #fddcc4;
   cursor: pointer;
   transform: scale(1.02);
-
 }
 
 .about-pets {
@@ -306,7 +305,6 @@ button {
   justify-content: center;
   position: relative;
   max-width: 1200px;
-
 }
 
 .friends-card {
@@ -343,8 +341,6 @@ button {
   color: #545454;
 }
 
-
-
 .friends-card:hover .btn-friends {
   background: #fddcc4;
   cursor: pointer;
@@ -364,7 +360,7 @@ button {
   display: block;
   text-align: center;
   padding: 15px;
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   margin: 0 auto;
   margin-top: 90px;
   border-radius: 100px;
@@ -377,7 +373,7 @@ button {
 }
 
 .friends-wrapper::before {
-  content: "";
+  content: '';
   width: 52px;
   height: 52px;
   position: absolute;
@@ -387,12 +383,12 @@ button {
   background-image: url('../assets/icons/Arrow.svg');
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   transition: 2s;
 }
 
 .friends-wrapper::after {
-  content: "";
+  content: '';
   width: 52px;
   height: 52px;
   position: absolute;
@@ -402,18 +398,18 @@ button {
   background-image: url('../assets/icons/Arrow-r.svg');
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   transition: 2s;
 }
 
 .friends-wrapper:hover::before {
-  background-color: #FDDCC4;
+  background-color: #fddcc4;
   transform: scale(1.02);
   cursor: pointer;
 }
 
 .friends-wrapper:hover::after {
-  background-color: #FDDCC4;
+  background-color: #fddcc4;
   transform: scale(1.02);
   cursor: pointer;
 }
@@ -421,7 +417,96 @@ button {
 .help-wrapper {
   width: 1026px;
   min-height: 281px;
-  border: 2px solid red;
+
   margin: 0 auto;
   margin-top: 60px;
+}
+
+.help-item {
+  height: 113px;
+  background-color: rgb(132, 207, 176);
+}
+
+.help-item__wrapper1 {
+  display: flex;
+  margin-bottom: 55px;
+  justify-content: space-between;
+}
+
+.help-item__wrapper2 {
+  display: flex;
+}
+
+.help-title {
+  margin: 0;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding-top: 87px;
+}
+
+.item1 {
+  background-image: url(../assets/icons/fodd.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item2 {
+  margin-right: 10px;
+  background-image: url(../assets/icons/transportation.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item3 {
+  width: 60px;
+  background-image: url(../assets/icons/toys.svg);
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-left: -10px;
+  text-align: center;
+}
+
+.item4 {
+  background-image: url(../assets/icons/bowls.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item5 {
+  background-image: url(../assets/icons/shampoos.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item6 {
+  background-image: url(../assets/icons/vitamins.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-left: 84px;
+}
+
+.item7 {
+  background-image: url(../assets/icons/medicines.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-left: 120px;
+}
+
+
+.item8 {
+  background-image: url(../assets/icons/leashes.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-left: 120px;
+}
+
+.item9 {
+  background-image: url(../assets/icons/area.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  margin-left: 120px;
 }
