@@ -307,8 +307,6 @@ button {
   max-width: 1200px;
 }
 
-
-
 .friends-card {
   display: flex;
   flex-direction: column;
@@ -410,9 +408,6 @@ button {
   transition: 2s;
 }
 
-
-
-
 .friends-arrow_l:hover {
   background-color: #fddcc4;
   border: none;
@@ -500,7 +495,6 @@ button {
   background-position: center top;
 }
 
-
 .item8 {
   background-image: url(../assets/icons/leashes.svg);
   background-repeat: no-repeat;
@@ -516,8 +510,6 @@ button {
 .make-info {
   width: 380px;
 }
-
-
 
 .make-title {
   width: 300px;
