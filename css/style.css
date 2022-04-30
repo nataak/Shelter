@@ -518,3 +518,10 @@ button {
 .make-img {
   margin-right: 30px;
 }
+
+.make-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+}
