@@ -451,57 +451,57 @@ button {
 }
 
 .item1 {
-  background-image: url(../assets/icons/fodd.svg);
+  background-image: url('../assets/icons/fodd.svg');
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 .item2 {
-  background-image: url(../assets/icons/transportation.svg);
+  background-image: url('../assets/icons/transportation.svg');
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 .item3 {
   width: 60px;
-  background-image: url(../assets/icons/toys.svg);
+  background-image: url('../assets/icons/toys.svg');
   background-repeat: no-repeat;
   background-position: top;
   text-align: center;
 }
 
 .item4 {
-  background-image: url(../assets/icons/bowls.svg);
+  background-image: url('../assets/icons/bowls.svg');
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 .item5 {
-  background-image: url(../assets/icons/shampoos.svg);
+  background-image: url('../assets/icons/shampoos.svg');
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 .item6 {
-  background-image: url(../assets/icons/vitamins.svg);
+  background-image: url('../assets/icons/vitamins.svg');
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 .item7 {
-  background-image: url(../assets/icons/medicines.svg);
+  background-image: url('../assets/icons/medicines.svg');
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 .item8 {
-  background-image: url(../assets/icons/leashes.svg);
+  background-image: url('../assets/icons/leashes.svg');
   background-repeat: no-repeat;
   background-position: center top;
 }
 
 .item9 {
-  background-image: url(../assets/icons/area.svg);
+  background-image: url('../assets/icons/area.svg');
   background-repeat: no-repeat;
   background-position: center top;
 }
@@ -557,7 +557,7 @@ button {
   border-radius: 9px;
   padding: 10px 15px;
   text-align: right;
-  background-image: url(../assets/icons/credit-card.svg);
+  background-image: url('../assets/icons/credit-card.svg');
   background-repeat: no-repeat;
   background-position: 15px center;
   margin: 20px 0;
@@ -617,4 +617,36 @@ button {
   line-height: 115%;
   letter-spacing: 0.06em;
   color: #F1CDB3;
+  padding-top: 42px;
+  padding-left: 60px;
+}
+
+.map {
+  min-height: 48px;
+  padding-top: 34px;
+  background-image: url('../assets/icons/icon-marker.svg');
+  background-repeat: no-repeat;
+  background-position: left 36px;
+  padding-left: 42px;
+}
+
+.map-london {
+  background-position: left 31px;
+  min-height: 79px;
+}
+
+
+.mail {
+  padding-top: 45px;
+  min-height: 76px;
+  background-image: url('../assets/icons/icon-email.svg');
+  background-repeat: no-repeat;
+  background-position: left 40px;
+}
+
+.tel {
+  min-height: 76px;
+  background-image: url('../assets/icons/phone.svg');
+  background-repeat: no-repeat;
+  background-position: left 35px;
 }
