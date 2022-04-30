@@ -79,6 +79,15 @@ button {
   justify-content: space-between;
 }
 
+.logo {
+  transition: 1.5s;
+}
+
+.logo:hover {
+  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg) brightness(89%) contrast(88%);
+  transform: scale(1.02);
+}
+
 .logo__title {
   margin: 0;
 }
@@ -413,7 +422,7 @@ button {
 }
 
 .help-wrapper {
-  width: 1026px;
+  max-width: 1026px;
   min-height: 281px;
   margin: 0 auto;
   margin-top: 60px;
@@ -497,6 +506,7 @@ button {
   background-position: center top;
 }
 
+/* nak */
 .make-info {
   width: 380px;
 }
@@ -564,11 +574,11 @@ button {
 }
 
 .footer-wrapper {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   min-height: 310px;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .footer-blocks {
@@ -576,6 +586,7 @@ button {
   min-height: 234px;
 }
 
+/* nak */
 .footer-blocks:nth-child(2) {
   margin-right: 25px;
 }
@@ -591,6 +602,19 @@ button {
   font-size: 35px;
   line-height: 130%;
   letter-spacing: 0.06em;
-  color: #FFFFFF;
+  color: #ffffff;
   padding-top: 16px;
+}
+
+/* nak */
+
+.mail, .tel, .map {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
 }
