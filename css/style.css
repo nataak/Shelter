@@ -424,7 +424,6 @@ button {
 
 .help-item {
   height: 113px;
-  background-color: rgb(132, 207, 176);
 }
 
 .help-item__wrapper1 {
@@ -509,4 +508,18 @@ button {
   background-repeat: no-repeat;
   background-position: center top;
   margin-left: 120px;
+}
+
+.make-info {
+  width: 380px;
+}
+
+
+
+.make-title {
+  width: 300px;
+}
+
+.make-img {
+  margin-right: 30px;
 }
