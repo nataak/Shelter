@@ -380,8 +380,9 @@ button {
   transform: scale(1.02);
 }
 
-.friends-wrapper::before {
-  content: '';
+.friends-arrow_l {
+  width: 30px;
+  height: 30px;
   width: 52px;
   height: 52px;
   position: absolute;
@@ -395,8 +396,7 @@ button {
   transition: 2s;
 }
 
-.friends-wrapper::after {
-  content: '';
+.friends-arrow {
   width: 52px;
   height: 52px;
   position: absolute;
@@ -410,14 +410,17 @@ button {
   transition: 2s;
 }
 
-.friends-wrapper:hover::before {
+
+
+
+.friends-arrow_l:hover {
   background-color: #fddcc4;
   border: none;
   transform: scale(1.02);
   cursor: pointer;
 }
 
-.friends-wrapper:hover::after {
+.friends-arrow:hover {
   background-color: #fddcc4;
   transform: scale(1.02);
   border: none;
