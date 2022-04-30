@@ -248,7 +248,7 @@ button {
 }
 
 .about-info {
-  width: 430px;
+  width: 435px;
 }
 
 .pets-img {
@@ -262,14 +262,12 @@ button {
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
-
   display: flex;
   align-items: center;
   letter-spacing: 0.06em;
-
   color: #545454;
   margin: 0;
-  padding-top: 18px;
+  padding-top: 15px;
 }
 
 .about-q {
@@ -649,4 +647,9 @@ button {
   background-image: url('../assets/icons/phone.svg');
   background-repeat: no-repeat;
   background-position: left 35px;
+}
+
+.mail:hover, .tel:hover, .map:hover {
+  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg) brightness(89%) contrast(88%);
+  transform: scale(1.02);
 }
