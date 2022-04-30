@@ -307,6 +307,8 @@ button {
   max-width: 1200px;
 }
 
+
+
 .friends-card {
   display: flex;
   flex-direction: column;
@@ -315,10 +317,14 @@ button {
   width: 270px;
   padding: 0;
   margin: 0 45px;
+  border-radius: 9px;
+  transition: 2s;
 }
 
 .friends-card:hover {
   cursor: pointer;
+  background-color: #e6e0e0;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .btn-friends {
@@ -343,6 +349,7 @@ button {
 
 .friends-card:hover .btn-friends {
   background: #fddcc4;
+  border: none;
   cursor: pointer;
   transform: scale(1.02);
 }
@@ -368,6 +375,7 @@ button {
 
 .btn-friend:hover {
   background: #fddcc4;
+  border: none;
   cursor: pointer;
   transform: scale(1.02);
 }
@@ -404,6 +412,7 @@ button {
 
 .friends-wrapper:hover::before {
   background-color: #fddcc4;
+  border: none;
   transform: scale(1.02);
   cursor: pointer;
 }
@@ -411,29 +420,26 @@ button {
 .friends-wrapper:hover::after {
   background-color: #fddcc4;
   transform: scale(1.02);
+  border: none;
   cursor: pointer;
 }
 
 .help-wrapper {
   width: 1026px;
   min-height: 281px;
-
   margin: 0 auto;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 7.4rem;
+  row-gap: 3.4rem;
 }
 
 .help-item {
   height: 113px;
-}
-
-.help-item__wrapper1 {
-  display: flex;
-  margin-bottom: 55px;
-  justify-content: space-between;
-}
-
-.help-item__wrapper2 {
-  display: flex;
+  display: inline-flex;
 }
 
 .help-title {
@@ -454,7 +460,6 @@ button {
 }
 
 .item2 {
-  margin-right: 10px;
   background-image: url(../assets/icons/transportation.svg);
   background-repeat: no-repeat;
   background-position: center top;
@@ -465,7 +470,6 @@ button {
   background-image: url(../assets/icons/toys.svg);
   background-repeat: no-repeat;
   background-position: top;
-  margin-left: -10px;
   text-align: center;
 }
 
@@ -485,14 +489,12 @@ button {
   background-image: url(../assets/icons/vitamins.svg);
   background-repeat: no-repeat;
   background-position: center top;
-  margin-left: 84px;
 }
 
 .item7 {
   background-image: url(../assets/icons/medicines.svg);
   background-repeat: no-repeat;
   background-position: center top;
-  margin-left: 120px;
 }
 
 
@@ -500,14 +502,12 @@ button {
   background-image: url(../assets/icons/leashes.svg);
   background-repeat: no-repeat;
   background-position: center top;
-  margin-left: 120px;
 }
 
 .item9 {
   background-image: url(../assets/icons/area.svg);
   background-repeat: no-repeat;
   background-position: center top;
-  margin-left: 120px;
 }
 
 .make-info {
