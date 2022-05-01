@@ -79,6 +79,15 @@ button {
   justify-content: space-between;
 }
 
+.logo {
+  transition: 1.5s;
+}
+
+.logo:hover {
+  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg) brightness(89%) contrast(88%);
+  transform: scale(1.02);
+}
+
 .logo__title {
   margin: 0;
 }
@@ -205,16 +214,6 @@ button {
 
 .make-section {
   min-height: 462px;
-  border: 2px solid green;
-}
-
-.footer {
-  min-height: 350px;
-  background: url('../../assets/images/bg.png'),
-    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .btn {
@@ -241,7 +240,6 @@ button {
   background: #fddcc4;
   cursor: pointer;
   transform: scale(1.02);
-
 }
 
 .about-pets {
@@ -250,7 +248,7 @@ button {
 }
 
 .about-info {
-  width: 430px;
+  width: 435px;
 }
 
 .pets-img {
@@ -264,14 +262,12 @@ button {
   font-weight: 400;
   font-size: 35px;
   line-height: 130%;
-
   display: flex;
   align-items: center;
   letter-spacing: 0.06em;
-
   color: #545454;
   margin: 0;
-  padding-top: 18px;
+  padding-top: 15px;
 }
 
 .about-q {
@@ -306,7 +302,6 @@ button {
   justify-content: center;
   position: relative;
   max-width: 1200px;
-
 }
 
 .friends-card {
@@ -317,10 +312,14 @@ button {
   width: 270px;
   padding: 0;
   margin: 0 45px;
+  border-radius: 9px;
+  transition: 2s;
 }
 
 .friends-card:hover {
   cursor: pointer;
+  background-color: #e6e0e0;
+  box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 
 .btn-friends {
@@ -343,10 +342,9 @@ button {
   color: #545454;
 }
 
-
-
 .friends-card:hover .btn-friends {
   background: #fddcc4;
+  border: none;
   cursor: pointer;
   transform: scale(1.02);
 }
@@ -364,7 +362,7 @@ button {
   display: block;
   text-align: center;
   padding: 15px;
-  background-color: #F1CDB3;
+  background-color: #f1cdb3;
   margin: 0 auto;
   margin-top: 90px;
   border-radius: 100px;
@@ -372,12 +370,14 @@ button {
 
 .btn-friend:hover {
   background: #fddcc4;
+  border: none;
   cursor: pointer;
   transform: scale(1.02);
 }
 
-.friends-wrapper::before {
-  content: "";
+.friends-arrow_l {
+  width: 30px;
+  height: 30px;
   width: 52px;
   height: 52px;
   position: absolute;
@@ -387,40 +387,269 @@ button {
   background-image: url('../assets/icons/Arrow.svg');
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   transition: 2s;
 }
 
-.friends-wrapper::after {
-  content: "";
+.friends-arrow {
   width: 52px;
   height: 52px;
   position: absolute;
   top: calc(50% - 12px);
-  right: - 2px;
+  right: -2px;
   border-radius: 100px;
   background-image: url('../assets/icons/Arrow-r.svg');
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid #F1CDB3;
+  border: 2px solid #f1cdb3;
   transition: 2s;
 }
 
-.friends-wrapper:hover::before {
-  background-color: #FDDCC4;
+.friends-arrow_l:hover {
+  background-color: #fddcc4;
+  border: none;
   transform: scale(1.02);
   cursor: pointer;
 }
 
-.friends-wrapper:hover::after {
-  background-color: #FDDCC4;
+.friends-arrow:hover {
+  background-color: #fddcc4;
   transform: scale(1.02);
+  border: none;
   cursor: pointer;
 }
 
 .help-wrapper {
-  width: 1026;
+  max-width: 1026px;
   min-height: 281px;
-  border: 2px solid red;
+  margin: 0 auto;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 7.4rem;
+  row-gap: 3.4rem;
+}
+
+.help-item {
+  height: 113px;
+  display: inline-flex;
+}
+
+.help-title {
+  margin: 0;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  padding-top: 87px;
+}
+
+.item1 {
+  background-image: url('../assets/icons/fodd.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item2 {
+  background-image: url('../assets/icons/transportation.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item3 {
+  width: 60px;
+  background-image: url('../assets/icons/toys.svg');
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: center;
+}
+
+.item4 {
+  background-image: url('../assets/icons/bowls.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item5 {
+  background-image: url('../assets/icons/shampoos.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item6 {
+  background-image: url('../assets/icons/vitamins.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item7 {
+  background-image: url('../assets/icons/medicines.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item8 {
+  background-image: url('../assets/icons/leashes.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.item9 {
+  background-image: url('../assets/icons/area.svg');
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+/* nak */
+.make-info {
+  width: 380px;
+}
+
+.make-title {
+  width: 300px;
+}
+
+.make-img {
+  margin-right: 30px;
+  align-self: center;
+}
+
+.make-text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  color: #b2b2b2;
+}
+
+.make-title {
+  padding: 0;
+}
+
+.make-subtitle {
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  margin: 0;
+  padding-top: 18px;
+}
+
+.make-bank {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #545454;
+  width: 349px;
+  height: 43px;
+  background: #f1cdb3;
+  border-radius: 9px;
+  padding: 10px 15px;
+  text-align: right;
+  background-image: url('../assets/icons/credit-card.svg');
+  background-repeat: no-repeat;
+  background-position: 15px center;
+  margin: 20px 0;
+}
+
+.footer {
+  min-height: 350px;
+  background: url('../../assets/images/bg.png'),
+    radial-gradient(100% 215.42% at 0% 0%, #5b483a 0%, #262425 100%), #211f20;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 40px;
+}
+
+.footer-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 310px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-blocks {
+  width: 302px;
+  min-height: 234px;
+}
+
+/* nak */
+.footer-blocks:nth-child(2) {
+  margin-right: 25px;
+}
+
+.footer-img {
+  height: 310px;
+}
+
+.footer-title {
+  margin: 0;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  padding-top: 16px;
+}
+
+/* nak */
+
+.mail, .tel, .map {
+  display: inline-block;
+  text-decoration: none;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  letter-spacing: 0.06em;
+  color: #F1CDB3;
+  padding-top: 42px;
+  padding-left: 60px;
+}
+
+.map {
+  min-height: 48px;
+  padding-top: 34px;
+  background-image: url('../assets/icons/icon-marker.svg');
+  background-repeat: no-repeat;
+  background-position: left 36px;
+  padding-left: 42px;
+}
+
+.map-london {
+  background-position: left 31px;
+  min-height: 79px;
+}
+
+
+.mail {
+  padding-top: 45px;
+  min-height: 76px;
+  background-image: url('../assets/icons/icon-email.svg');
+  background-repeat: no-repeat;
+  background-position: left 40px;
+}
+
+.tel {
+  min-height: 76px;
+  background-image: url('../assets/icons/phone.svg');
+  background-repeat: no-repeat;
+  background-position: left 35px;
+}
+
+.mail:hover, .tel:hover, .map:hover {
+  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg) brightness(89%) contrast(88%);
+  transform: scale(1.02);
 }
