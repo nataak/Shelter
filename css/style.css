@@ -663,3 +663,12 @@ button {
   filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg) brightness(89%) contrast(88%);
   transform: scale(1.02);
 }
+
+.header-our {
+  min-height: 120px;
+  padding-top: 30px;
+}
+
+.header__nav-our {
+  margin: 0;
+}
