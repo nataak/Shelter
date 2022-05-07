@@ -559,6 +559,13 @@ button {
   background-repeat: no-repeat;
   background-position: 15px center;
   margin: 20px 0;
+  transition: 2s;
+}
+
+.make-bank:hover {
+  background-color: #fddcc4;
+  transform: scale(1.02);
+  border: none;
 }
 
 .footer {
@@ -606,7 +613,9 @@ button {
 
 /* nak */
 
-.mail, .tel, .map {
+.mail,
+.tel,
+.map {
   display: inline-block;
   text-decoration: none;
   font-family: 'Georgia', serif;
@@ -614,7 +623,7 @@ button {
   font-size: 20px;
   line-height: 115%;
   letter-spacing: 0.06em;
-  color: #F1CDB3;
+  color: #f1cdb3;
   padding-top: 42px;
   padding-left: 60px;
 }
@@ -633,7 +642,6 @@ button {
   min-height: 79px;
 }
 
-
 .mail {
   padding-top: 45px;
   min-height: 76px;
@@ -649,7 +657,35 @@ button {
   background-position: left 35px;
 }
 
-.mail:hover, .tel:hover, .map:hover {
+.mail:hover,
+.tel:hover,
+.map:hover {
   filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg) brightness(89%) contrast(88%);
   transform: scale(1.02);
+}
+
+.header-our {
+  min-height: 120px;
+  padding-top: 30px;
+}
+
+.header__nav-our {
+  margin: 0;
+}
+
+.logo__link-our, .header__link-our {
+  color: #545454;
+}
+
+.logo__subtitle-our, .header__link-activeour {
+  color: #292929;
+}
+
+.header__link-our:hover, .logo__link-our:hover, .logo__subtitle-our:hover, .header__link-activeour:hover {
+  color: #292929;
+  filter: none;
+}
+
+.logo__subtitle-our {
+  padding-left: 4px;
 }
