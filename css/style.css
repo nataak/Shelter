@@ -84,7 +84,8 @@ button {
 }
 
 .logo:hover {
-  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg) brightness(89%) contrast(88%);
+  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg)
+    brightness(89%) contrast(88%);
   transform: scale(1.02);
 }
 
@@ -313,6 +314,7 @@ button {
   padding: 0;
   margin: 0 45px;
   border-radius: 9px;
+  padding-bottom: 45px;
   transition: 2s;
 }
 
@@ -320,6 +322,7 @@ button {
   cursor: pointer;
   background-color: #e6e0e0;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  transform: scale(1.02);
 }
 
 .btn-friends {
@@ -364,7 +367,7 @@ button {
   padding: 15px;
   background-color: #f1cdb3;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 45px;
   border-radius: 100px;
 }
 
@@ -660,7 +663,8 @@ button {
 .mail:hover,
 .tel:hover,
 .map:hover {
-  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg) brightness(89%) contrast(88%);
+  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg)
+    brightness(89%) contrast(88%);
   transform: scale(1.02);
 }
 
@@ -673,19 +677,99 @@ button {
   margin: 0;
 }
 
-.logo__link-our, .header__link-our {
+.logo__link-our,
+.header__link-our {
   color: #545454;
 }
 
-.logo__subtitle-our, .header__link-activeour {
+.logo__subtitle-our,
+.header__link-activeour {
   color: #292929;
 }
 
-.header__link-our:hover, .logo__link-our:hover, .logo__subtitle-our:hover, .header__link-activeour:hover {
+.header__link-our:hover,
+.logo__link-our:hover,
+.logo__subtitle-our:hover,
+.header__link-activeour:hover {
   color: #292929;
   filter: none;
 }
 
+.friend-section__our {
+  min-height: 1341px;
+}
+
 .logo__subtitle-our {
   padding-left: 4px;
+}
+.friends-wrapper__our {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 1rem;
+  margin-top: 58px;
+}
+.friends-card__our {
+  margin: 0;
+}
+.btns_wrapper {
+  width: 340px;
+  height: 52px;
+  margin: 45px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bnt__friends {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  border-radius: 50%;
+  transition: 2s;
+  cursor: pointer;
+}
+
+.btn__friends-active {
+  border: none;
+  background: #f1cdb3;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  color: #292929;
+}
+.bnt__friends:first-child {
+  border: 2px solid #cdcdcd;
+  background-image: url('../assets/icons/prev.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bnt__friends:nth-child(2) {
+  border: 2px solid #cdcdcd;
+  background-image: url('../assets/icons/prev1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bnt__friends:nth-child(4) {
+  background-image: url('../assets/icons/next1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bnt__friends:last-child {
+  background-image: url('../assets/icons/next.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bnt__friends:hover {
+  background-color: #fddcc4;
+  transform: scale(1.02);
+  border: none;
+}
+.bnt__friends:disabled {
+  cursor: not-allowed;
+}
+.bnt__friends:hover:disabled {
+  background-color: #f6f6f6;
+  border: 2px solid #cdcdcd;
+  transform: none;
 }
