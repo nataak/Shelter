@@ -84,7 +84,8 @@ button {
 }
 
 .logo:hover {
-  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg) brightness(89%) contrast(88%);
+  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg)
+    brightness(89%) contrast(88%);
   transform: scale(1.02);
 }
 
@@ -660,7 +661,8 @@ button {
 .mail:hover,
 .tel:hover,
 .map:hover {
-  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg) brightness(89%) contrast(88%);
+  filter: invert(59%) sepia(9%) saturate(126%) hue-rotate(358deg)
+    brightness(89%) contrast(88%);
   transform: scale(1.02);
 }
 
@@ -673,19 +675,37 @@ button {
   margin: 0;
 }
 
-.logo__link-our, .header__link-our {
+.logo__link-our,
+.header__link-our {
   color: #545454;
 }
 
-.logo__subtitle-our, .header__link-activeour {
+.logo__subtitle-our,
+.header__link-activeour {
   color: #292929;
 }
 
-.header__link-our:hover, .logo__link-our:hover, .logo__subtitle-our:hover, .header__link-activeour:hover {
+.header__link-our:hover,
+.logo__link-our:hover,
+.logo__subtitle-our:hover,
+.header__link-activeour:hover {
   color: #292929;
   filter: none;
 }
 
+.friend-section__our {
+  min-height: 1342px;
+}
+
 .logo__subtitle-our {
   padding-left: 4px;
+}
+.friends-wrapper__our {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 3.8rem;
+  margin-top: 58px;
+}
+.friends-card__our {
+  margin: 0;
 }
