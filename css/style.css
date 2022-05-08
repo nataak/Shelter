@@ -724,6 +724,7 @@ button {
   border: 2px solid #f1cdb3;
   border-radius: 50%;
   transition: 2s;
+  cursor: pointer;
 }
 
 .btn__friends-active {
@@ -736,11 +737,13 @@ button {
   color: #292929;
 }
 .bnt__friends:first-child {
+  border: 2px solid #cdcdcd;
   background-image: url('../assets/icons/prev.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
 .bnt__friends:nth-child(2) {
+  border: 2px solid #cdcdcd;
   background-image: url('../assets/icons/prev1.svg');
   background-repeat: no-repeat;
   background-position: center;
@@ -760,5 +763,12 @@ button {
   background-color: #fddcc4;
   transform: scale(1.02);
   border: none;
-  cursor: pointer;
+}
+.bnt__friends:disabled {
+  cursor: not-allowed;
+}
+.bnt__friends:hover:disabled {
+  background-color: #f6f6f6;
+  border: 2px solid #cdcdcd;
+  transform: none;
 }
