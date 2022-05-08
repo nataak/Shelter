@@ -765,7 +765,7 @@ button {
   background-position: center;
 }
 
-.bnt__friends-hover:hover {
+.bnt__friends1:hover {
   background-color: #fddcc4;
   transform: scale(1.02);
   border: none;
