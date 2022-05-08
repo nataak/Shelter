@@ -314,6 +314,7 @@ button {
   padding: 0;
   margin: 0 45px;
   border-radius: 9px;
+  padding-bottom: 45px;
   transition: 2s;
 }
 
@@ -365,7 +366,7 @@ button {
   padding: 15px;
   background-color: #f1cdb3;
   margin: 0 auto;
-  margin-top: 90px;
+  margin-top: 45px;
   border-radius: 100px;
 }
 
@@ -703,9 +704,61 @@ button {
 .friends-wrapper__our {
   flex-wrap: wrap;
   justify-content: space-between;
-  row-gap: 3.8rem;
+  row-gap: 1rem;
   margin-top: 58px;
 }
 .friends-card__our {
   margin: 0;
+}
+.btns_wrapper {
+  width: 340px;
+  height: 52px;
+  margin: 45px auto 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bnt__friends {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #f1cdb3;
+  border-radius: 50%;
+  transition: 2s;
+}
+
+.btn__friends-active {
+  border: none;
+  background: #f1cdb3;
+  font-family: 'Georgia';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  color: #292929;
+}
+.bnt__friends:first-child {
+  background-image: url('../assets/icons/prev.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bnt__friends:nth-child(2) {
+  background-image: url('../assets/icons/prev1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bnt__friends:nth-child(4) {
+  background-image: url('../assets/icons/next1.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.bnt__friends:last-child {
+  background-image: url('../assets/icons/next.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bnt__friends:hover {
+  background-color: #fddcc4;
+  transform: scale(1.02);
+  border: none;
+  cursor: pointer;
 }
