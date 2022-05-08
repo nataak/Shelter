@@ -322,6 +322,7 @@ button {
   cursor: pointer;
   background-color: #e6e0e0;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+  transform: scale(1.02);
 }
 
 .btn-friends {
@@ -695,7 +696,7 @@ button {
 }
 
 .friend-section__our {
-  min-height: 1342px;
+  min-height: 1341px;
 }
 
 .logo__subtitle-our {
