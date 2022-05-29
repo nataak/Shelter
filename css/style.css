@@ -705,15 +705,18 @@ button {
 .logo__subtitle-our {
   padding-left: 4px;
 }
+
 .friends-wrapper__our {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 1rem;
   margin-top: 58px;
 }
+
 .friends-card__our {
   margin: 0;
 }
+
 .btns_wrapper {
   width: 340px;
   height: 52px;
@@ -729,6 +732,7 @@ button {
   border-radius: 50%;
   transition: 2s;
 }
+
 .bnt__friends1 {
   border: 2px solid #f1cdb3;
   border-radius: 50%;
@@ -745,23 +749,27 @@ button {
   line-height: 115%;
   color: #292929;
 }
+
 .bnt__friends:first-child {
   border: 2px solid #cdcdcd;
   background-image: url('../assets/icons/prev.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .bnt__friends:nth-child(2) {
   border: 2px solid #cdcdcd;
   background-image: url('../assets/icons/prev1.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .bnt__friends:nth-child(4) {
   background-image: url('../assets/icons/next1.svg');
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .bnt__friends:last-child {
   background-image: url('../assets/icons/next.svg');
   background-repeat: no-repeat;
@@ -773,6 +781,7 @@ button {
   transform: scale(1.02);
   border: none;
 }
+
 .bnt__friends:disabled {
   cursor: not-allowed;
   background-color: #f6f6f6;
@@ -785,9 +794,11 @@ button {
     max-width: 708px;
     padding: 0;
   }
+
   .only__section {
     min-height: 1165px;
   }
+
   .header__nav {
     margin-top: 30px;
   }
@@ -804,6 +815,7 @@ button {
   .btn__only {
     margin: 0 auto;
   }
+
   .puppy {
     margin-top: 100px;
     width: 100%;
@@ -816,9 +828,9 @@ button {
   .about-title {
     padding-top: 0;
   }
+
   .about-section {
-    background-color: pink;
-    min-height: 1048px;
+    max-height: 1048px;
     padding-bottom: 100px;
   }
 
@@ -828,16 +840,19 @@ button {
     justify-content: space-between;
     height: 868px;
   }
+
   .pets-img {
     margin: 0;
   }
 }
+
 @media (max-width: 767px) {
   .container {
     height: auto;
     max-width: 320px;
     justify-content: start;
   }
+
   .nav {
     display: none;
   }
@@ -846,6 +861,7 @@ button {
     width: 257px;
     margin-left: 10px;
   }
+
   .menu__icon {
     display: block;
     z-index: 5;
@@ -855,6 +871,7 @@ button {
     cursor: pointer;
     margin-top: 19px;
   }
+
   .menu__span,
   .menu__icon::before,
   .menu__icon::after {
@@ -865,6 +882,7 @@ button {
     transition: all 0.3s ease 0s;
     background-color: #f1cdb3;
   }
+
   .menu__icon::before,
   .menu__icon::after {
     content: '';
@@ -873,22 +891,27 @@ button {
   .menu__icon::before {
     top: 0;
   }
+
   .menu__icon::after {
     bottom: 0;
   }
+
   .menu__span {
     top: 40%;
     transform: scale(1) translate(0px, 50%);
   }
+
   .info {
     width: 100%;
     text-align: center;
   }
+
   .info__title {
     font-size: 25px;
     line-height: 130%;
     letter-spacing: 0.06em;
   }
+
   .info__text {
     font-size: 15px;
     line-height: 160%;
@@ -906,7 +929,52 @@ button {
     background-repeat: no-repeat;
     margin-top: 100px;
   }
+
   .only__section {
     min-height: 823px;
+  }
+
+  .about-info {
+    width: 300px;
+    text-align: center;
+  }
+
+  .about-title,
+  .about-q {
+    font-size: 25px;
+    line-height: 130%;
+    text-align: center;
+    display: block;
+  }
+
+  .about-text {
+    font-size: 15px;
+    line-height: 160%;
+    margin: 22px auto;
+    letter-spacing: 0.09em;
+    text-align: left;
+    max-width: 275px;
+  }
+
+  .about-text1 {
+    margin-top: 25px;
+  }
+
+  .about-section {
+    padding-top: 42px;
+    height: 974px;
+  }
+
+  .pets-img {
+    width: 260px;
+    height: 354px;
+    background-image: url('../assets/images/about-pets-1.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
+
+  .about-pets {
+    height: 890px;
+    justify-content: space-between;
   }
 }
