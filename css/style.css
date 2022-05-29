@@ -209,7 +209,7 @@ button {
 }
 
 .friends-section {
-  min-height: 877px;
+  height: 877px;
 }
 
 .help-section {
@@ -856,6 +856,30 @@ button {
   .friends-card {
     margin: 0;
   }
+
+  .help-wrapper {
+    column-gap: 3.7rem;
+    justify-content: center;
+  }
+
+  .help-item {
+    width: 170px;
+    display: block;
+    text-align: center;
+  }
+
+  .make-section {
+    height: 783px;
+  }
+
+  .make {
+    height: 100%;
+  }
+
+  .make-img {
+    margin-top: 60px;
+    margin-left: 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -973,7 +997,6 @@ button {
     margin-top: 25px;
   }
 
-  .friends-section,
   .about-section {
     padding-top: 42px;
     height: 974px;
@@ -1012,5 +1035,82 @@ button {
 
   .btn-friend {
     margin-top: 102px;
+  }
+
+  .friends-section {
+    max-height: 791px;
+    padding-top: 42px;
+    padding-bottom: 0;
+  }
+
+  .help-section {
+    padding-top: 42px;
+    padding-bottom: 42px;
+  }
+
+  .help-item {
+    width: 130px;
+    height: 87px;
+    background-size: 50px 50px;
+  }
+
+  .help-title {
+    font-size: 15px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    padding-top: 70px;
+  }
+
+  .help-wrapper {
+    margin-top: 42px;
+    column-gap: 1.9rem;
+    row-gap: 1.9rem;
+  }
+  .make-section {
+    padding-top: 42px;
+    padding-bottom: 42px;
+    height: 542px;
+  }
+  .make-bank {
+    width: 281px;
+    height: 43px;
+    padding: 10px 15px;
+    margin-top: 23 px;
+    font-size: 15px;
+    line-height: 110%;
+  }
+  .make-title {
+    font-size: 25px;
+    line-height: 130%;
+    font-size: 25px;
+    line-height: 130%;
+    width: 220px;
+    margin: 0 auto;
+  }
+  .make-subtitle {
+    padding-top: 19px;
+    font-size: 15px;
+    line-height: 160%;
+    width: 305px;
+    letter-spacing: 0.008em;
+  }
+  .make-text {
+    width: 300px;
+    margin: 0 auto;
+    text-align: justify;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.08em;
+  }
+  .make-img {
+    margin: 0;
+    width: 260px;
+    height: 135px;
+  }
+  .make-container {
+    height: 100%;
+  }
+  .make {
+    height: 100%;
   }
 }
