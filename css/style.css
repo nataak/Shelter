@@ -880,6 +880,28 @@ button {
     margin-top: 60px;
     margin-left: 20px;
   }
+
+  .footer {
+    padding-top: 30px;
+  }
+
+  .footer-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+    column-gap: 2rem;
+  }
+
+  .footer-title {
+    padding-top: 0;
+  }
+
+  .footer-blocks-1 {
+    margin-left: 26px;
+  }
+
+  .footer-img {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1066,11 +1088,13 @@ button {
     column-gap: 1.9rem;
     row-gap: 1.9rem;
   }
+
   .make-section {
     padding-top: 42px;
     padding-bottom: 42px;
     height: 542px;
   }
+
   .make-bank {
     width: 281px;
     height: 43px;
@@ -1079,6 +1103,7 @@ button {
     font-size: 15px;
     line-height: 110%;
   }
+
   .make-title {
     font-size: 25px;
     line-height: 130%;
@@ -1087,6 +1112,7 @@ button {
     width: 220px;
     margin: 0 auto;
   }
+
   .make-subtitle {
     padding-top: 19px;
     font-size: 15px;
@@ -1094,6 +1120,7 @@ button {
     width: 305px;
     letter-spacing: 0.008em;
   }
+
   .make-text {
     width: 300px;
     margin: 0 auto;
@@ -1102,15 +1129,58 @@ button {
     line-height: 18px;
     letter-spacing: 0.08em;
   }
+
   .make-img {
     margin: 0;
     width: 260px;
     height: 135px;
   }
+
   .make-container {
     height: 100%;
   }
+
   .make {
     height: 100%;
+  }
+
+  .footer-wrapper {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer-title {
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    width: 278px;
+    margin: 0 auto;
+  }
+
+  .footer-blocks-1 {
+    margin-left: 0;
+  }
+
+  .mail {
+    margin-left: 25px;
+  }
+
+  .tel {
+    margin-left: 29px;
+    margin-bottom: 32px;
+  }
+
+  .map {
+    padding-top: 41px;
+    background-position: left 41px;
+  }
+
+  .footer-img {
+    width: 260px;
+    height: 269px;
+    margin-top: 30px;
+    margin-left: 20px;
   }
 }
