@@ -1143,4 +1143,44 @@ button {
   .make {
     height: 100%;
   }
+
+  .footer-wrapper {
+    flex-direction: column;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .footer-title {
+    font-size: 25px;
+    line-height: 130%;
+    letter-spacing: 0.06em;
+    text-align: center;
+    width: 278px;
+    margin: 0 auto;
+  }
+
+  .footer-blocks-1 {
+    margin-left: 0;
+  }
+
+  .mail {
+    margin-left: 25px;
+  }
+
+  .tel {
+    margin-left: 29px;
+    margin-bottom: 32px;
+  }
+
+  .map {
+    padding-top: 41px;
+    background-position: left 41px;
+  }
+
+  .footer-img {
+    width: 260px;
+    height: 269px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
 }
