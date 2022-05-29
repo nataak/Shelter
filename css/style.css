@@ -844,12 +844,15 @@ button {
   .pets-img {
     margin: 0;
   }
+
   .friends-card__last {
     display: none;
   }
+
   .friends-wrapper {
     column-gap: 36px;
   }
+
   .friends-card {
     margin: 0;
   }
@@ -948,6 +951,7 @@ button {
     text-align: center;
   }
 
+  .friends-title,
   .about-title,
   .about-q {
     font-size: 25px;
@@ -969,6 +973,7 @@ button {
     margin-top: 25px;
   }
 
+  .friends-section,
   .about-section {
     padding-top: 42px;
     height: 974px;
@@ -985,5 +990,27 @@ button {
   .about-pets {
     height: 890px;
     justify-content: space-between;
+  }
+
+  .friends-card:nth-child(3) {
+    display: none;
+  }
+
+  .friends-wrapper {
+    margin-top: 42px;
+  }
+
+  .friends-arrow {
+    top: 457px;
+    left: 62%;
+  }
+
+  .friends-arrow_l {
+    top: 457px;
+    left: 21%;
+  }
+
+  .btn-friend {
+    margin-top: 102px;
   }
 }
