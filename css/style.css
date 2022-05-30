@@ -902,6 +902,36 @@ button {
   .footer-img {
     margin-top: 50px;
   }
+
+  .header__nav-our {
+    margin-top: 0;
+  }
+
+  .friend-section__our {
+    height: 1733px;
+  }
+
+  .friends-card__our:last-child {
+    display: none;
+  }
+
+  .friends-card__our:nth-child(7) {
+    display: none;
+  }
+
+  .friends-wrapper__our {
+    max-width: 708px;
+    margin-top: 30px;
+    justify-content: center;
+  }
+
+  .btns_wrapper {
+    margin-top: 20px;
+  }
+
+  .blocks__our {
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 767px) {
