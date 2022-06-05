@@ -941,13 +941,16 @@ button {
     justify-content: start;
   }
 
-  .nav {
-    display: none;
-  }
-
   .header__nav {
     width: 257px;
     margin-left: 10px;
+    position: relative;
+    transition: 1s;
+  }
+
+  .nav {
+    left: -850px;
+    position: absolute;
   }
 
   .menu__icon {
@@ -965,9 +968,9 @@ button {
   .menu__icon::after {
     left: 0;
     position: absolute;
-    height: 10%;
+    height: 3px;
     width: 100%;
-    transition: all 0.3s ease 0s;
+    transition: all 0.7s ease 0s;
     background-color: #f1cdb3;
   }
 
@@ -985,8 +988,45 @@ button {
   }
 
   .menu__span {
-    top: 40%;
+    top: 35%;
     transform: scale(1) translate(0px, 50%);
+  }
+
+  .menu__icon.active {
+    width: 30px;
+    height: 30px;
+    margin-top: 15px;
+    margin-right: 56px;
+  }
+
+  span.active,
+  .menu__icon.active::before,
+  .menu__icon.active::after {
+    top: 0;
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    transition: all 0.7s ease 0s;
+    background-color: #f1cdb3;
+  }
+
+  .menu__icon.active::before,
+  .menu__icon.active::after {
+    content: '';
+  }
+
+  span.active {
+    left: 50%;
+    position: absolute;
+    top: -50%;
+  }
+
+  .menu__icon.active::before {
+    left: 5px;
+  }
+
+  .menu__icon.active::after {
+    left: 85%;
   }
 
   .info {
@@ -1253,5 +1293,45 @@ button {
 
   .blocks__our {
     margin-left: 0;
+  }
+
+  .header__nav.active {
+    flex-wrap: wrap;
+    margin: 0;
+    width: 320px;
+    height: 823px;
+    background-color: #292929;
+    align-content: flex-start;
+    padding-top: 30px;
+    padding-left: 10px;
+    position: absolute;
+    left: 0;
+  }
+
+  .only__section-small {
+    margin-top: -145px;
+    padding-top: 200px;
+  }
+
+  .nav.active {
+    left: 0;
+    transition: 1s;
+    flex-direction: column;
+    margin-top: 144px;
+    width: 243px;
+    height: 327px;
+    text-align: center;
+    display: flex;
+    margin-left: 30px;
+  }
+
+  .nav.active .header__link {
+    font-size: 32px;
+    line-height: 160%;
+    letter-spacing: 0.081em;
+  }
+
+  .only__section-small.active {
+    padding-top: 1000px;
   }
 }
