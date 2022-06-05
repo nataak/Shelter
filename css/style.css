@@ -320,6 +320,13 @@ button {
   padding-bottom: 45px;
   transition: 2s;
 }
+.friends-card:nth-child(3),
+.friends-card:nth-child(4),
+.friends-card:nth-child(5),
+.friends-card:nth-child(7),
+.friends-card:nth-child(8) {
+  display: none;
+}
 
 .friends-card:hover {
   cursor: pointer;
