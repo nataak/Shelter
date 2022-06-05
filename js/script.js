@@ -57,14 +57,22 @@ fetch('./js/pets.json').then((response) => {
       `;
   };
 
-  const cardHTMl = data
-    .map((card) => {
+
+  const cardHTMl = data.splice(Math.floor(Math.random() * data.length), 3)
+    .map((card, i, arr) => {
+      console.log(arr.length);
       return generateCard(
         card.name,
         card.img
       );
     })
     .join('');
+
+
+
+
+
+
   const header = document.createElement('h2');
   header.classList.add('friends-title');
   header.innerHTML = `Our friends who <br />
@@ -80,6 +88,51 @@ fetch('./js/pets.json').then((response) => {
   const btn2 = document.createElement('button');
   btn2.classList.add('friends-arrow');
   cards.append(btn2);
+
+
+
+  function addCards() {
+    const generateCard = (name, img, type, breed, description, age, inoculations, diseases, parasites) => {
+      return `<div class="friends-card">
+              <img src="${img}" alt="${name}"/>
+              <h4 class="card-title">${name}</h4>
+              <a href="" class="btn btn-friends">Learn more</a>
+            </div>
+        `;
+    };
+
+    function moveSlide(arr) {
+      for (let i = arr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+      }
+      return arr;
+    }
+
+    console.log(moveSlide(data));
+
+
+    const cardHTMl = data
+      .map((card, i, arr) => {
+
+
+        return generateCard(
+          card.name,
+          card.img
+        );
+      })
+      .join('');
+
+    container.append(cards);
+    cards.innerHTML = cardHTMl;
+    cards.prepend(btn1);
+    cards.append(btn2);
+
+  }
+  const btnLeft = document.querySelector('.friends-arrow_l');
+  btnLeft.addEventListener('click', addCards);
+  const btnRigth = document.querySelector('.friends-arrow');
+  btnRigth.addEventListener('click', addCards)
 })
   .catch((err) => {
     // Somtihing wrong
