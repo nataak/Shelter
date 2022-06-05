@@ -1272,7 +1272,6 @@ button {
 
   .friends-wrapper__our {
     row-gap: 1.9rem;
-    background-color: palevioletred;
     height: 1365px;
   }
 
@@ -1305,7 +1304,7 @@ button {
     padding-top: 30px;
     padding-left: 10px;
     position: absolute;
-    left: 0;
+    left: 55px;
   }
 
   .only__section-small {
@@ -1333,5 +1332,19 @@ button {
 
   .only__section-small.active {
     padding-top: 1000px;
+  }
+  .header__link-activeour {
+    color: #fafafa;
+  }
+  .header__nav-our.active {
+    top: 0;
+  }
+  .friend-section__our.active {
+    padding-top: 1000px;
+  }
+}
+@media (max-width: 320px) {
+  .header__nav.active {
+    left: 0;
   }
 }
