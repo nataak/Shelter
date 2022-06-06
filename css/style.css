@@ -1343,14 +1343,17 @@ button {
   .only__section-small.active {
     padding-top: 1000px;
   }
-  .header__link-activeour {
-    color: #fafafa;
-  }
+
   .header__nav-our.active {
+    background-color: #fff;
     top: 0;
   }
   .friend-section__our.active {
     padding-top: 1000px;
+  }
+
+  .container-our.active {
+    padding-top: 100px;
   }
 }
 @media (max-width: 320px) {
