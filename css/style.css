@@ -305,7 +305,8 @@ button {
   display: flex;
   justify-content: center;
   position: relative;
-  max-width: 1200px;
+  max-width: 1170px;
+  overflow: hidden;
 }
 
 .friends-card {
@@ -388,7 +389,7 @@ button {
   height: 52px;
   position: absolute;
   top: calc(50% - 35px);
-  left: -2px;
+  left: 0;
   border-radius: 100px;
   background-image: url('../assets/icons/Arrow.svg');
   background-repeat: no-repeat;
@@ -402,7 +403,7 @@ button {
   height: 52px;
   position: absolute;
   top: calc(50% - 35px);
-  right: -2px;
+  right: 0;
   border-radius: 100px;
   background-image: url('../assets/icons/Arrow-r.svg');
   background-repeat: no-repeat;
@@ -850,11 +851,16 @@ button {
   }
 
   .friends-wrapper {
-    column-gap: 36px;
+    column-gap: 80px;
+    max-width: 720px;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 40px;
   }
 
   .friends-card {
     margin: 0;
+    margin-right: 20px;
   }
 
   .help-wrapper {
@@ -1113,6 +1119,8 @@ button {
 
   .friends-wrapper {
     margin-top: 42px;
+    overflow: auto;
+    overflow-x: hidden;
   }
 
   .friends-arrow {
@@ -1123,6 +1131,8 @@ button {
   .friends-arrow_l {
     top: 457px;
     left: 21%;
+    justify-content: center;
+    z-index: 888888888888888;
   }
 
   .btn-friend {
@@ -1272,7 +1282,6 @@ button {
 
   .friends-wrapper__our {
     row-gap: 1.9rem;
-    background-color: palevioletred;
     height: 1365px;
   }
 
@@ -1305,7 +1314,7 @@ button {
     padding-top: 30px;
     padding-left: 10px;
     position: absolute;
-    left: 0;
+    left: 55px;
   }
 
   .only__section-small {
@@ -1333,5 +1342,22 @@ button {
 
   .only__section-small.active {
     padding-top: 1000px;
+  }
+
+  .header__nav-our.active {
+    background-color: #fff;
+    top: 0;
+  }
+  .friend-section__our.active {
+    padding-top: 1000px;
+  }
+
+  .container-our.active {
+    padding-top: 100px;
+  }
+}
+@media (max-width: 320px) {
+  .header__nav.active {
+    left: 0;
   }
 }
