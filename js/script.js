@@ -71,8 +71,6 @@ fetch('./js/pets.json').then((response) => {
 
 
 
-
-
   const header = document.createElement('h2');
   header.classList.add('friends-title');
   header.innerHTML = `Our friends who <br />
@@ -103,7 +101,8 @@ fetch('./js/pets.json').then((response) => {
 
     function moveSlide(arr) {
       for (let i = arr.length - 1; i > 0; i--) {
-        let j = Math.floor(Math.random() * (i + 1));
+        let j = Math.floor(Math.random() * (i - 1));
+        console.log(j);
         [arr[i], arr[j]] = [arr[j], arr[i]];
       }
       return arr;
@@ -123,7 +122,7 @@ fetch('./js/pets.json').then((response) => {
       })
       .join('');
 
-    container.append(cards);
+    container.insertAdjacentElement('beforebegin', cards);
     cards.innerHTML = cardHTMl;
     cards.prepend(btn1);
     cards.append(btn2);
@@ -133,6 +132,8 @@ fetch('./js/pets.json').then((response) => {
   btnLeft.addEventListener('click', addCards);
   const btnRigth = document.querySelector('.friends-arrow');
   btnRigth.addEventListener('click', addCards)
+
+
 })
   .catch((err) => {
     // Somtihing wrong
@@ -148,13 +149,7 @@ const buttonMore = document.createElement('a');
 buttonMore.classList.add('btn', 'btn-friend');
 buttonMore.setAttribute('href', 'pets/our-pets.html');
 buttonMore.innerText = 'Get to know the rest';
-container.append(buttonMore);
-
-
-
-
-
-
+container.insertAdjacentElement('beforeend', buttonMore);
 
 
 const section = document.querySelector('.friends-section');
