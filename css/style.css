@@ -789,6 +789,23 @@ button {
   border: 2px solid #cdcdcd;
 }
 
+.popup-wrapper {
+  width: 400px;
+  height: 300px;
+  background-color: pink;
+  z-index: 88877778877;
+  position: absolute;
+  color: blue;
+  top: 0;
+  left: 0;
+  display: block;
+}
+.descr {
+  width: 300px;
+  height: 100px;
+  background-color: #fff;
+}
+
 /* 768 px */
 @media (max-width: 1279px) {
   .container {

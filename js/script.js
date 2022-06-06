@@ -48,27 +48,41 @@ fetch('./js/pets.json').then((response) => {
 }).then((data) => {
   // this is JSON
 
-  const generateCard = (name, img, type, breed, description, age, inoculations, diseases, parasites) => {
+  const generateCard = (name, img, description, type, breed, age, inoculations, diseases, parasites) => {
     return `<div class="friends-card">
             <img src="${img}" alt="${name}"/>
             <h4 class="card-title">${name}</h4>
             <a href="" class="btn btn-friends">Learn more</a>
+            
           </div>
+          <div class="popup-wrapper">
+          <div class="descr">${description}</div>
+            <h2 class="popup-title">${type}</h2>
+            <h3>${breed}</h3>
+            <span>${age}</span>
+          
+        
+          </div>
+          
       `;
+
   };
 
 
   const cardHTMl = data.splice(Math.floor(Math.random() * data.length), 3)
     .map((card, i, arr) => {
-      console.log(arr.length);
+      console.log(card.description);
       return generateCard(
         card.name,
-        card.img
+        card.img,
+        card.description,
+        card.type,
+        card.breed,
+        card.age
       );
+
     })
     .join('');
-
-
 
 
   const header = document.createElement('h2');
@@ -90,14 +104,26 @@ fetch('./js/pets.json').then((response) => {
 
 
   function addCards() {
-    const generateCard = (name, img, type, breed, description, age, inoculations, diseases, parasites) => {
+    const generateCard = (name, img, description, type, breed, age, inoculations, diseases, parasites) => {
       return `<div class="friends-card">
               <img src="${img}" alt="${name}"/>
               <h4 class="card-title">${name}</h4>
               <a href="" class="btn btn-friends">Learn more</a>
+              
             </div>
+            <div class="popup-wrapper">
+            <div class="descr">${description}</div>
+              <h2 class="popup-title">${type}</h2>
+              <h3>${breed}</h3>
+              <span>${age}</span>
+            
+          
+            </div>
+            
         `;
+
     };
+
 
     function moveSlide(arr) {
       for (let i = arr.length - 1; i > 0; i--) {
@@ -117,7 +143,11 @@ fetch('./js/pets.json').then((response) => {
 
         return generateCard(
           card.name,
-          card.img
+          card.img,
+          card.description,
+          card.type,
+          card.breed,
+          card.age
         );
       })
       .join('');
