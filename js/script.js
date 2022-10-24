@@ -55,17 +55,17 @@ fetch('./js/pets.json')
       return `<div class="friends-card">
             <img src="${img}" alt="${name}"/>
             <h4 class="card-title">${name}</h4>
-            <a href="" class="btn btn-friends">Learn more</a>
+            <a href="" class="btn btn-friends btn-more" data-toggle-id="open">Learn more</a>
             
           </div>
-          <div class="popup-wrapper">
+          <div class="popup-wrapper hidden">
           
           <img src="${img}" alt="${name}" class="popup-img"/>
           <div class="wr">
-            <p class="descr">${description}</p>
-              <h2 class="popup-title">${type}</h2>
-              <h3>${breed}</h3>
-              <span>${age}</span>
+              <h2 class="popup-title friends-title">${type}</h2>
+              <p class="descr about-text">${description}</p>
+              <h3 class="help-title popup-title">${breed}</h3>
+              <span class="popup-age popup-title help-title">${age}</span>
               <button class="btn btn-friend btn-close">Close</button>
           </div>
     
@@ -77,7 +77,6 @@ fetch('./js/pets.json')
     const cardHTMl = data
       .splice(Math.floor(Math.random() * data.length), 3)
       .map((card, i, arr) => {
-        console.log(card.description);
         return generateCard(
           card.name,
           card.img,
@@ -120,11 +119,20 @@ fetch('./js/pets.json')
         return `<div class="friends-card">
               <img src="${img}" alt="${name}"/>
               <h4 class="card-title">${name}</h4>
-              <a href="" class="btn btn-friends">Learn more</a>
+              <a href="" class="btn btn-friends btn-more" data-toggle-id="open">Learn more</a>
               
             </div>
-           
+            <div class="popup popup-wrapper hidden">
             
+            <img src="${img}" alt="${name}" class="popup-img"/>
+            <div class="wr">
+                <h2 class="popup-title friends-title">${type}</h2>
+                <p class="descr about-text">${description}</p>
+                <h3 class="help-title popup-title">${breed}</h3>
+                <span class="popup-age popup-title help-title">${age}</span>
+                <button class="btn btn-friend btn-close">Close</button>
+            </div>
+            </div>
         `;
       };
 
@@ -179,3 +187,11 @@ container.insertAdjacentElement('beforeend', buttonMore);
 const section = document.querySelector('.friends-section');
 frag.appendChild(container);
 section.appendChild(frag);
+window.addEventListener('load', function () {
+
+  let friends = document.querySelectorAll('.friends-card');
+  console.log(friends);
+  let popup = document.querySelectorAll('.popup-wrapper');
+  console.log(popup)
+});
+

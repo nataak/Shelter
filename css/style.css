@@ -808,19 +808,30 @@ button {
   right: 20%;
 }
 .popup-img {
-  height: 98%;
-  margin: 2px;
+  height: 95%;
+  margin: 3px;
 }
 .wr {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
 }
+.popup-title {
+  line-height: 1;
+  padding-top: 20px;
+}
+
+.popup-age {
+  color: #7a6353;
+  font-size: 16px;
+}
 .descr {
   width: 80%;
   height: 100px;
 }
-
+/* .hidden {
+  display: none;
+} */
 /* 768 px */
 @media (max-width: 1279px) {
   .container {
