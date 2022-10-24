@@ -790,20 +790,35 @@ button {
 }
 
 .popup-wrapper {
-  width: 400px;
+  width: 70vw;
   height: 300px;
-  background-color: pink;
+  background-color: #f6f6f6;
   z-index: 88877778877;
-  position: absolute;
+  position: fixed;
   color: blue;
-  top: 0;
-  left: 0;
-  display: block;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  border-radius: 20px;
+  border: #f1cdb3 2px solid;
+}
+.btn-close {
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+}
+.popup-img {
+  height: 98%;
+  margin: 2px;
+}
+.wr {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
 }
 .descr {
-  width: 300px;
+  width: 80%;
   height: 100px;
-  background-color: #fff;
 }
 
 /* 768 px */
