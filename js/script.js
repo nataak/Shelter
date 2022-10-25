@@ -55,7 +55,7 @@ fetch('./js/pets.json')
       return `<div class="friends-card">
             <img src="${img}" alt="${name}"/>
             <h4 class="card-title">${name}</h4>
-            <a href="" class="btn btn-friends btn-more" data-toggle-id="open">Learn more</a>
+            <button class="btn btn-friends btn-more" data-toggle-id="open">Learn more</button>
             
           </div>
           <div class="popup-wrapper hidden">
@@ -119,7 +119,7 @@ fetch('./js/pets.json')
         return `<div class="friends-card">
               <img src="${img}" alt="${name}"/>
               <h4 class="card-title">${name}</h4>
-              <a href="" class="btn btn-friends btn-more" data-toggle-id="open">Learn more</a>
+              <button class="btn btn-friends btn-more" data-toggle-id="open">Learn more</button>
               
             </div>
             <div class="popup popup-wrapper hidden">
@@ -190,8 +190,40 @@ section.appendChild(frag);
 window.addEventListener('load', function () {
 
   let friends = document.querySelectorAll('.friends-card');
-  console.log(friends);
+
   let popup = document.querySelectorAll('.popup-wrapper');
+
+  let btnMore = document.querySelectorAll('.btn-more');
+  for (let i = 0; i < btnMore.length; i++) {
+    btnMore[i].addEventListener('click', function () {
+      display(popup[i], 'flex');
+    });
+  }
+
+  popup.forEach(function (item, i) {
+    let btn = item.querySelector('button');
+    function closePopup() {
+      item.style.display = 'none';
+    }
+    btn.addEventListener('click', closePopup);
+  });
+
+  function display(elems, value) {
+    value = value || 'block';
+    if (elems instanceof HTMLElement) {
+      elems.style.display = value;
+      return;
+    }
+  }
   console.log(popup)
 });
+
+
+
+
+
+
+
+
+
 
