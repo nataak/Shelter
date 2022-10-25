@@ -789,6 +789,56 @@ button {
   border: 2px solid #cdcdcd;
 }
 
+.popup-wrapper {
+  width: 70vw;
+  height: 300px;
+  background-color: #f6f6f6;
+  z-index: 88877778877;
+  position: fixed;
+  color: blue;
+  top: 10%;
+  left: 10%;
+  display: flex;
+  border-radius: 20px;
+  border: #f1cdb3 2px solid;
+}
+
+.btn-close {
+  position: absolute;
+  bottom: 5%;
+  right: 20%;
+}
+
+.popup-img {
+  height: 95%;
+  margin: 3px;
+}
+
+.wr {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.popup-title {
+  line-height: 1;
+  padding-top: 20px;
+}
+
+.popup-age {
+  color: #7a6353;
+  font-size: 16px;
+}
+
+.descr {
+  width: 80%;
+  height: 100px;
+}
+
+.hidden {
+  display: none;
+}
+
 /* 768 px */
 @media (max-width: 1279px) {
   .container {
@@ -840,6 +890,10 @@ button {
     align-items: center;
     justify-content: space-between;
     height: 868px;
+  }
+
+  .btn-close {
+    width: 50%;
   }
 
   .pets-img {
@@ -937,6 +991,16 @@ button {
 
   .blocks__our {
     margin-left: 15px;
+  }
+
+  .popup-wrapper {
+    width: 90%;
+    height: 80%;
+    flex-direction: column;
+  }
+
+  .popup-img {
+    width: 50%;
   }
 }
 
@@ -1348,6 +1412,7 @@ button {
     background-color: #fff;
     top: 0;
   }
+
   .friend-section__our.active {
     padding-top: 1000px;
   }
@@ -1356,6 +1421,7 @@ button {
     padding-top: 100px;
   }
 }
+
 @media (max-width: 320px) {
   .header__nav.active {
     left: 0;
